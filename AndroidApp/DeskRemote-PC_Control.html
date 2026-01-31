@@ -1,375 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <title>Desk Remote — Privacy Policy</title>
-  <meta name="description" content="Desk Remote Privacy Policy and user controls." />
+  <meta charset="UTF-8">
+  <title>Desk Remote – Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Desk Remote Android application">
   <style>
-    :root{
-      --bg:#0b1220;
-      --card:rgba(255,255,255,.06);
-      --text:rgba(255,255,255,.92);
-      --muted:rgba(255,255,255,.68);
-      --border:rgba(255,255,255,.12);
-      --accent:#66d9ff;
-      --good:#7CFFB2;
-      --warn:#FFD36A;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 18px;
-      --max: 980px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#f6f8ff;
-        --card:rgba(0,0,0,.04);
-        --text:rgba(0,0,0,.88);
-        --muted:rgba(0,0,0,.64);
-        --border:rgba(0,0,0,.10);
-        --shadow: 0 10px 30px rgba(0,0,0,.10);
-        --accent:#0b7cff;
-        --good:#0b8a4a;
-        --warn:#b15a00;
-      }
-    }
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family: var(--sans);
-      color: var(--text);
-      background:
-        radial-gradient(1200px 600px at 15% -10%, rgba(102,217,255,.25), transparent 60%),
-        radial-gradient(900px 500px at 95% 15%, rgba(124,255,178,.18), transparent 55%),
-        radial-gradient(700px 420px at 40% 110%, rgba(255,211,106,.14), transparent 60%),
-        var(--bg);
-      line-height:1.55;
-    }
-    a{ color: var(--accent); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
-
-    header{
-      padding: 44px 20px 18px;
-    }
-    .wrap{
-      max-width: var(--max);
-      margin: 0 auto;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      margin-bottom: 14px;
-    }
-    .logo{
-      width:44px;height:44px;border-radius:14px;
-      background: linear-gradient(135deg, rgba(102,217,255,.95), rgba(11,124,255,.95));
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
-      position: relative;
-      overflow:hidden;
-    }
-    .logo:before{
-      content:"";
-      position:absolute; inset:-30%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.50), transparent 55%);
-      transform: rotate(12deg);
-    }
-    h1{
-      font-size: clamp(26px, 3.2vw, 38px);
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
       margin: 0;
-      letter-spacing: -0.02em;
+      padding: 0;
+      line-height: 1.6;
     }
-    .sub{
-      color: var(--muted);
-      margin: 6px 0 0;
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+    h1, h2 {
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 32px;
+    }
+    p {
+      margin: 12px 0;
+    }
+    ul {
+      margin: 12px 0 12px 20px;
+    }
+    li {
+      margin: 6px 0;
+    }
+    .muted {
+      color: #555;
       font-size: 14px;
     }
-    .pillrow{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top: 14px;
-    }
-    .pill{
-      font-size: 12px;
-      color: var(--muted);
-      background: var(--card);
-      border: 1px solid var(--border);
-      padding: 7px 10px;
-      border-radius: 999px;
-      backdrop-filter: blur(10px);
-    }
-
-    main{ padding: 16px 20px 46px; }
-    .grid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 16px;
-    }
-    @media (max-width: 900px){
-      .grid{ grid-template-columns: 1fr; }
-    }
-
-    .card{
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-    }
-    h2{
-      margin:0 0 10px;
-      font-size: 18px;
-      letter-spacing:-0.01em;
-    }
-    p{ margin: 10px 0; color: var(--text); }
-    .muted{ color: var(--muted); }
-    ul{ margin: 10px 0 0 18px; padding:0; }
-    li{ margin: 6px 0; color: var(--text); }
-    .kvs{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .kv{
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 12px 12px;
-      background: rgba(255,255,255,.02);
-    }
-    .kv .k{
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .kv .v{
-      margin-top: 6px;
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
       font-size: 14px;
+      color: #555;
     }
-
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 7px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.02);
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .dot{
-      width:9px;height:9px;border-radius:999px;
-      background: var(--good);
-      box-shadow: 0 0 0 4px rgba(124,255,178,.15);
-    }
-    .dot.warn{
-      background: var(--warn);
-      box-shadow: 0 0 0 4px rgba(255,211,106,.18);
-    }
-
-    .footer{
-      padding: 18px 20px 40px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .hr{
-      height:1px;
-      background: var(--border);
-      margin: 14px 0;
-    }
-    code{
-      font-family: var(--mono);
-      font-size: 12px;
-      padding: 2px 6px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: rgba(0,0,0,.12);
-    }
-    @media (prefers-color-scheme: light){
-      code{ background: rgba(0,0,0,.05); }
+    a {
+      color: #000;
+      text-decoration: underline;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <div class="wrap">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div>
-          <h1>Desk Remote — Privacy Policy</h1>
-          <div class="sub">Applies to the Desk Remote Android app and companion desktop components.</div>
-        </div>
-      </div>
 
-      <div class="pillrow" role="list">
-        <div class="pill" role="listitem">Last updated: <strong>2026-01-31</strong></div>
-        <div class="pill" role="listitem">Works over local network</div>
-        <div class="pill" role="listitem">No account required</div>
-      </div>
-    </div>
-  </header>
+  <div class="container">
+    <h1>Desk Remote – Privacy Policy</h1>
+    <p class="muted">Last updated: January 31, 2026</p>
 
-  <main>
-    <div class="wrap grid">
-      <!-- Main content -->
-      <section class="card">
-        <h2>Summary</h2>
-        <p class="muted">
-          Desk Remote is designed to control your PC from your phone over your local network (for example, Wi-Fi).
-          We aim to keep data collection minimal.
-        </p>
+    <p>
+      Desk Remote respects your privacy. This policy explains how the Desk Remote
+      Android application handles information when you use the app.
+    </p>
 
-        <div class="kvs">
-          <div class="kv">
-            <div class="k">Data collection</div>
-            <div class="v"><span class="badge"><span class="dot"></span>We do not collect personal data by default</span></div>
-          </div>
-          <div class="kv">
-            <div class="k">Cloud dependency</div>
-            <div class="v"><span class="badge"><span class="dot"></span>No cloud required for core features</span></div>
-          </div>
-          <div class="kv">
-            <div class="k">Network</div>
-            <div class="v"><span class="badge"><span class="dot warn"></span>Uses your local network to communicate with your PC</span></div>
-          </div>
-        </div>
+    <h2>Overview</h2>
+    <p>
+      Desk Remote allows you to control your PC from your phone over a local network.
+      The app is designed to work without user accounts or cloud services.
+    </p>
 
-        <div class="hr"></div>
+    <h2>Information Used by the App</h2>
+    <p>
+      Desk Remote does not collect personal information for its core functionality.
+      The app communicates directly with your PC over your local network to send
+      control commands.
+    </p>
 
-        <h2>What information the app uses</h2>
-        <p>
-          Desk Remote communicates with your computer to send control commands (media, volume, and optionally input features).
-          This communication happens on your local network between your phone and your PC.
-        </p>
+    <ul>
+      <li><strong>Local network discovery:</strong> Used to find your PC automatically.</li>
+      <li><strong>Pairing data:</strong> A one-time PIN is used to authorize a connection.</li>
+      <li><strong>Control commands:</strong> Media and volume control signals sent to your PC.</li>
+    </ul>
 
-        <ul>
-          <li><strong>Device discovery:</strong> the app may scan the local network to find your PC automatically.</li>
-          <li><strong>Pairing:</strong> the app uses a one-time PIN shown on your PC to pair the devices.</li>
-          <li><strong>Control data:</strong> control commands (e.g., play/pause, volume changes) are sent to your PC.</li>
-        </ul>
+    <h2>Data We Do Not Collect</h2>
+    <ul>
+      <li>No account registration is required.</li>
+      <li>No personal identifiers are collected.</li>
+      <li>No contacts, messages, photos, or precise location data are accessed.</li>
+      <li>No data is sold or shared with third parties.</li>
+    </ul>
 
-        <div class="hr"></div>
+    <h2>Permissions</h2>
+    <p>
+      Desk Remote may request the following permissions depending on enabled features:
+    </p>
+    <ul>
+      <li><strong>Network access:</strong> To communicate with your PC over Wi-Fi or LAN.</li>
+      <li><strong>Nearby devices / local network:</strong> For automatic device discovery.</li>
+      <li><strong>Notifications:</strong> To show playback controls on the lock screen or notification panel.</li>
+    </ul>
 
-        <h2>Data we do not collect</h2>
-        <ul>
-          <li>We do not require account registration.</li>
-          <li>We do not sell personal information.</li>
-          <li>We do not collect your contacts, SMS, photos, or precise location for core functionality.</li>
-        </ul>
+    <h2>User Control</h2>
+    <ul>
+      <li>You can unpair your PC at any time.</li>
+      <li>You can disable notifications through Android system settings.</li>
+      <li>Uninstalling the app removes its local data from your device.</li>
+    </ul>
 
-        <div class="hr"></div>
+    <h2>Children’s Privacy</h2>
+    <p>
+      Desk Remote is not intended to collect personal information from children.
+      If you believe a child has provided personal information, please contact us.
+    </p>
 
-        <h2>Permissions</h2>
-        <p class="muted">Permissions can vary by Android version and enabled features.</p>
-        <ul>
-          <li><strong>Network access:</strong> required to connect to your PC over Wi-Fi or LAN.</li>
-          <li><strong>Nearby devices / local network:</strong> may be used to discover your PC automatically.</li>
-          <li><strong>Notifications:</strong> used to show media controls on lock screen / notification shade (optional).</li>
-        </ul>
+    <h2>Changes to This Policy</h2>
+    <p>
+      This policy may be updated as the app evolves. The “Last updated” date will
+      reflect any changes.
+    </p>
 
-        <div class="hr"></div>
+    <h2>Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy, please contact:
+    </p>
+    <p>
+      Email: <a href="mailto:info@pappuraj.com">info@pappuraj.com</a><br>
+      Website: <a href="https://pappuraj.com">https://pappuraj.com</a>
+    </p>
 
-        <h2>Security</h2>
-        <p>
-          Pairing requires a one-time PIN displayed on your PC. After pairing, the app only controls devices you have authorized.
-          For best safety, use Desk Remote on trusted networks and keep your PC protected with a system password.
-        </p>
-
-        <div class="hr"></div>
-
-        <h2>User controls</h2>
-        <ul>
-          <li><strong>Unpair anytime:</strong> remove paired devices from the app or desktop extension.</li>
-          <li><strong>Disable discovery:</strong> you can turn off auto-discovery and use manual connection (if available).</li>
-          <li><strong>Stop notifications:</strong> disable notification controls in Android settings.</li>
-          <li><strong>Uninstall:</strong> uninstalling the app removes the app’s local data from your phone.</li>
-        </ul>
-
-        <div class="hr"></div>
-
-        <h2>Children’s privacy</h2>
-        <p>
-          Desk Remote is not designed to collect personal information from children. If you believe a child has provided
-          personal information to us, contact us and we will take appropriate steps.
-        </p>
-
-        <div class="hr"></div>
-
-        <h2>Changes to this policy</h2>
-        <p class="muted">
-          We may update this policy to reflect product improvements. The “Last updated” date at the top will change when we do.
-        </p>
-      </section>
-
-      <!-- Side column -->
-      <aside class="card">
-        <h2>Google Play Data Safety</h2>
-        <p class="muted">Use this section to match your Play Console “Data safety” form.</p>
-
-        <div class="kvs">
-          <div class="kv">
-            <div class="k">Data collected</div>
-            <div class="v">None by default (core features work without collecting personal data).</div>
-          </div>
-          <div class="kv">
-            <div class="k">Data shared</div>
-            <div class="v">None.</div>
-          </div>
-          <div class="kv">
-            <div class="k">Data processed on-device</div>
-            <div class="v">Commands are generated on your phone and sent directly to your PC over the local network.</div>
-          </div>
-          <div class="kv">
-            <div class="k">Account required</div>
-            <div class="v">No.</div>
-          </div>
-        </div>
-
-        <div class="hr"></div>
-
-        <h2>Contact</h2>
-        <p class="muted">
-          For questions, support, or privacy requests, contact:
-        </p>
-        <p>
-          Email: <a href="mailto:support@pappuraj.com">support@pappuraj.com</a><br />
-          Website: <a href="https://pappuraj.com" rel="noopener">pappuraj.com</a>
-        </p>
-
-        <div class="hr"></div>
-
-        <h2>App info</h2>
-        <p class="muted">
-          Product: <strong>Desk Remote</strong><br />
-          Companion: GNOME extension / desktop service<br />
-          Network: Local Wi-Fi / LAN
-        </p>
-
-        <p class="muted" style="margin-top:12px">
-          Tip: Host this page at a stable URL and add it as your Privacy Policy link in Google Play Console.
-        </p>
-      </aside>
-    </div>
-  </main>
-
-  <div class="footer">
-    <div class="wrap">
-      © <span id="y"></span> Desk Remote. All rights reserved.
-      <div class="muted" style="margin-top:6px">
-        If you publish an open-source repository, you can add the link here later.
-      </div>
-    </div>
+    <footer>
+      © 2026 Desk Remote. All rights reserved.
+    </footer>
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
