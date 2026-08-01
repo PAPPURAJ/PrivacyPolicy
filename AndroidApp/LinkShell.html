@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy Policy for the LinkShell Android application.">
+  <title>LinkShell Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f4f7fb;
+      --card: #ffffff;
+      --text: #152033;
+      --muted: #5d697b;
+      --line: #dce3ed;
+      --accent: #1769e0;
+      --accent-soft: #e8f1ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #0d1420;
+        --card: #151f2e;
+        --text: #edf3fc;
+        --muted: #aab6c8;
+        --line: #2b394d;
+        --accent: #78aaff;
+        --accent-soft: #1c355b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 5vw, 56px);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 14px 45px rgb(20 35 60 / 8%);
+    }
+    h1, h2 { line-height: 1.25; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3rem); letter-spacing: -.035em; }
+    h2 { margin: 2.25rem 0 .7rem; font-size: 1.3rem; }
+    p, ul { margin: .65rem 0; }
+    ul { padding-left: 1.4rem; }
+    li + li { margin-top: .45rem; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin-bottom: 1.8rem; }
+    .summary {
+      padding: 18px 20px;
+      background: var(--accent-soft);
+      border-radius: 14px;
+    }
+    .contact {
+      margin-top: 2.4rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+    }
+    code { overflow-wrap: anywhere; }
+    @media (max-width: 560px) {
+      main { width: 100%; margin: 0; border: 0; border-radius: 0; min-height: 100vh; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>LinkShell</strong> &middot; Effective August 1, 2026</p>
+
+    <p class="summary">
+      LinkShell is a remote-access client. Your saved connection profiles and optional
+      passwords are stored locally on your device. LinkShell does not require an account
+      and the developer does not operate a service that receives your SSH, SFTP, or RDP
+      credentials. The app does use Google Mobile Ads, which collects certain device and
+      usage information as described below.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      LinkShell (package <code>com.pappuraj.linkshell</code>) is provided by
+      Pappuraj Bhottacharjee ("we," "us," or "our"). Questions about this policy or
+      LinkShell's privacy practices may be sent to
+      <a href="mailto:info@pappuraj.com">info@pappuraj.com</a>.
+    </p>
+
+    <h2>2. Information LinkShell handles</h2>
+    <p>To provide its features, LinkShell may handle the following information:</p>
+    <ul>
+      <li><strong>Connection information:</strong> profile name, protocol, host name or IP address, port, username, domain, authentication method, display and input preferences, favorite status, and last-connected time.</li>
+      <li><strong>Authentication information:</strong> passwords you enter for SSH, SFTP, or RDP and private-key files you select. Saving a password is optional.</li>
+      <li><strong>Remote-session content:</strong> terminal input and output, remote desktop display/input, and files or folders you choose to transfer through SFTP.</li>
+      <li><strong>Network-tool input and results:</strong> host names, IP addresses, ports, and reachability or scan results for systems you choose to test.</li>
+      <li><strong>App preferences:</strong> theme, keyboard mappings, pointer behavior, and related settings.</li>
+      <li><strong>Advertising data:</strong> data automatically collected by the Google Mobile Ads SDK, detailed in Section 5.</li>
+    </ul>
+
+    <h2>3. How we use information</h2>
+    <p>LinkShell uses information to:</p>
+    <ul>
+      <li>save and organize connection profiles on your device;</li>
+      <li>authenticate and establish connections to destinations you select;</li>
+      <li>provide terminal, remote desktop, SFTP, and network-diagnostic features;</li>
+      <li>remember your app and input preferences;</li>
+      <li>allow you to export or import profile backups; and</li>
+      <li>display, measure, and protect advertising through Google Mobile Ads.</li>
+    </ul>
+
+    <h2>4. Local storage, remote connections, and backups</h2>
+    <p>
+      Connection profiles and preferences are stored in LinkShell's private app storage.
+      If you choose to save a password, it is encrypted using AES-GCM with a non-exportable
+      key held by Android Keystore. Private-key files are accessed only when you select them
+      for authentication.
+    </p>
+    <p>
+      SSH, SFTP, RDP, and network-tool traffic is sent directly between your device and the
+      host or network destination you specify. That destination and its operator may process
+      connection details and session content under their own policies; we do not control
+      systems you choose to access.
+    </p>
+    <p>
+      LinkShell can create a portable JSON backup when you request one. The backup contains
+      connection profile settings, but intentionally excludes saved passwords and private-key
+      contents. You choose where the exported file is stored and are responsible for protecting
+      and deleting it.
+    </p>
+
+    <h2>5. Advertising and third-party data collection</h2>
+    <p>
+      LinkShell displays banner and interstitial advertisements using the Google Mobile Ads
+      SDK (AdMob), provided by Google. According to Google's disclosure for this SDK, it may
+      automatically collect and share:
+    </p>
+    <ul>
+      <li>your device's IP address, which may be used to estimate general location;</li>
+      <li>app and ad interactions, such as app launches, taps, and ad views;</li>
+      <li>diagnostic and performance information, such as launch time, hangs, and energy usage; and</li>
+      <li>device or account identifiers, including the Android advertising ID, App Set ID, and other applicable identifiers.</li>
+    </ul>
+    <p>
+      Google uses this information for advertising, analytics, and fraud prevention. Data sent
+      by the Google Mobile Ads SDK is encrypted in transit. Google's handling of this data is
+      governed by the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and its
+      <a href="https://policies.google.com/technologies/partner-sites">information for sites and apps that use Google services</a>.
+      You can reset or delete your advertising ID through your Android device settings where
+      supported.
+    </p>
+
+    <h2>6. Sharing of information</h2>
+    <p>We do not sell your connection profiles, credentials, or remote-session content. Information may be disclosed only:</p>
+    <ul>
+      <li>to the remote systems you explicitly direct LinkShell to connect to;</li>
+      <li>to Google through the Mobile Ads SDK as described in Section 5;</li>
+      <li>when you direct the app to export a backup or transfer a file; or</li>
+      <li>if required to comply with applicable law, legal process, or a valid governmental request.</li>
+    </ul>
+
+    <h2>7. Retention and deletion</h2>
+    <p>
+      Local profiles, credentials, trusted host information, and preferences remain on your
+      device until you delete the relevant profile, clear LinkShell's app data, or uninstall
+      the app. Deleting a profile also deletes its locally saved password. Session-only
+      passwords are not intentionally retained after the session flow ends. Exported backup
+      files remain wherever you saved them until you delete them.
+    </p>
+    <p>
+      LinkShell does not provide or require a developer-hosted user account, so there is no
+      LinkShell cloud account to delete. Google determines the retention of advertising data
+      it processes; consult Google's privacy resources and controls for more information.
+    </p>
+
+    <h2>8. Security</h2>
+    <p>
+      We use reasonable technical measures designed to protect locally stored information,
+      including Android private app storage and Android Keystore-backed encryption for saved
+      passwords. Network security also depends on the protocol, configuration, remote system,
+      and network you use. No storage or transmission method can be guaranteed completely secure.
+    </p>
+
+    <h2>9. Children's privacy</h2>
+    <p>
+      LinkShell is a technical remote-access utility and is not directed to children under 13.
+      We do not knowingly request personal information from children. If you believe a child
+      has provided personal information through a service we control, contact us so we can
+      review the concern.
+    </p>
+
+    <h2>10. International processing</h2>
+    <p>
+      Google and remote systems selected by you may process information in countries other than
+      your own. Their privacy policies govern their processing and international transfers.
+    </p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>
+      We may update this policy when LinkShell's features, data practices, or legal obligations
+      change. We will publish the revised policy with a new effective date. Material changes may
+      also be communicated through the app or its store listing when appropriate.
+    </p>
+
+    <h2>12. Contact us</h2>
+    <p class="contact">
+      <strong>Pappuraj Bhottacharjee</strong><br>
+      Email: <a href="mailto:info@pappuraj.com">info@pappuraj.com</a>
+    </p>
+  </main>
+</body>
+</html>
